@@ -89,7 +89,8 @@ console.log(name1.__proto__.__proto__.__proto__);//null
 
 
 /*
-5.Give an example of call(), apply(), bind()
+6.
+Give an example of call(), apply(), bind()
 */
 let employee1 = {
 
@@ -136,7 +137,7 @@ res2(23,"M");
 
 
 /*
-6.
+7.
 Give an example of inheritance using function constructor
 */
 function Employee(name, age, gender, id) {
@@ -160,7 +161,7 @@ console.log(Developer.prototype);
 
 
 /*
-7.
+8.
 What are callbacks?
 Definition - Any function that is passed as an argument to another function so that 
              it can be executed in that other function is called as a callback function.
@@ -181,7 +182,7 @@ function myFirst() {
 
 
 /*
-8.
+9.
 What is the use of setTimeout?
 Definition - The global setTimeout() method sets a timer which executes a function or 
              specified piece of code once the timer expires.
@@ -196,7 +197,7 @@ setTimeout(() => {
 
 
 /*
-9.
+10.
 What is callback hell
 Definition - Callback hell is a phenomenon that afflicts a JavaScript developer when he tries to execute 
              multiple asynchronous operations one after the other.
@@ -228,7 +229,7 @@ callbackhell();
 
 
 /* 
-10.
+11.
 What is an event loop and call stack
 Call Stack - A call stack is a mechanism for an interpreter (like the JavaScript interpreter in 
     a web browser) to keep track of its place in a script that calls 
@@ -241,7 +242,7 @@ the call stack and executes each one in order.
 
 
 /*
-11.
+12.
 Explain call(), apply() and, bind() methods
 Call  : binds the this value, invokes the function, and allows you to pass a list of arguments. 
 Apply : binds the this value, invokes the function, and allows you to pass arguments as an array.
