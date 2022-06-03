@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        <b>1.What is a Temporal Dead Zone?</b>
+ 
+        A temporal dead zone (TDZ) is the area of a block where 
+        a variable is inaccessible until the moment the computer completely initializes it with a value.
+        Suppose you attempt to access a variable before its complete initialization. In such a case, 
+        JavaScript will throw a ReferenceError.So, to prevent JavaScript from throwing such an error, 
+        you've got to remember to access your variables from outside the temporal dead zone.
+ 
+         <b>2.What is the for-in loop in JavaScript? Give its syntax</b>
+ 
+         The for...in statements combo iterates (loops) over the properties of an object.
+          The code block inside the loop is executed once for each property.
+          syntax:
+          for (key in object) {
+             // body of for...in
+         }
+         In each iteration of the loop, a key is assigned to the key variable.
+         The loop continues for all object properties.
+ 
+         <b>3.Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript</b>
+ 
+         <u>Function scope:</u> Variables that are declared inside a function are called local variables and in the function scope.
+         Local variables are accessible anywhere inside the function. 
+         <u>Local Scope:</u> occurs when you create a variable inside a function. By doing that, the visibility 
+         and accessibility of the variable is only allowed within that function.
+         <u>Block scope:</u> Variable that is declared inside a specific block & can't be accessed outside of that block
+         <u>Scope chain:</u> Whenever our code tries to access a variable during the function call, it starts the searching from local variables. And if the variable is not found, it'll continue searching in its outer scope or parent function's scope until it reaches the global scope and completes searching for the variable there. Searching for any variable happens along the scope chain or in different scopes until we get the variable.
+         If the variable is not found in the global scope as well, a reference error is thrown. 
+ 
+         <b>4.What is difference between null and undefined and where to use what? what is Symbol?</b>
+         
+         <u>Null:</u> It is the intentional absence of the value. It is one of the primitive values of JavaScript.
+         <b>Null: Object </b>
+         <u>Undefined:</u> It means the value does not exist in the compiler.
+         <b>Undefined: undefined</b>
+         When we define a variable to undefined then we are trying to convey that the variable does not exist .
+         When we define a variable to null then we are trying to convey that the variable is empty.
+ 
+         <b>5.Write code to explain map and filter in arrays</b>
+ 
+         Every element of the array is passed to the callback function and returns a new array with the same length.
+         <u>map:</u> If we want to perform the same operation/transformation on each element of the array 
+         and get back a new array of the same length with the transformed values.
+         <u>filter:</u>Every element of the array is passed to the callback function.
+         On each iteration, if the callback returns true, then that element will be added to the new array, 
+         otherwise, it is not added to the new array.
+ 
+         <b>6.Write a code to create two objects with 2 properties each, one will be string and other will be an array.
+         Create a function to check if all the elements of the arrays in both the objects are same</b>
+ 
+         let obj1 =
+         {
+             name: "example1",
+             value: [1,2,3,4,5]
+         }
+         
+         let obj2 =
+         {
+             name: "example1",
+             value: [1,2,3,4,5]    
+         }
+         function check
+         {
+             if(obj1 == obj2)
+             {
+                 console.log("true");
+             }
+             else
+             {
+                 console.log("false");
+             }
+         }
+         check();
+ 
+         <b>7.Please explain Self Invoking Function and its code</b>
+ 
+         JavaScript functions are defined with the function keyword.You can use a function 
+         declaration or a function expression.
+         Self-invoking functions in JavaScript are the anonymous self-executing functions 
+         that are called after their definition.
+         These JavaScript functions can run immediately when followed by the parentheses set ().
+         In JavaScript, a “Self-Invoking” function is a type of function that is invoked or called 
+         automatically after its definition. The execution 
+         of such an anonymous function is done by enclosing it in a parenthesis 
+         set followed by another set of parenthesis.
+ 
+     </pre>
+    <p id="ex"></p>
+
+    <script src="./i.js"></script>
+  </body>
+</html>
