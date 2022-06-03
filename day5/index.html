@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="day">DAY FIVE</h1>
+    <pre>
+        <b>1.Create a button , on click of which new Heading tag h1 should be added with text as "MERN stack" on the screen above button</b>
+        
+        <b>2.Write code to get 1st H1 element from a webpage using DOM</b>
+
+        <b>3.Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</b>
+        
+        <b>4.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</b>
+        
+        <b>5.Create an HTML page having content as Hello world and a button named "Hide Text." When user will click on this button hide the "Hello World" text</b>
+        
+        <b>6.Given an array of 0's and 1's find out number of 0's</b>
+        
+        <b>7.Given an array find out total no. of odd and even nos.</b>
+        
+        <b>8.Given a string find out number of vowels </b>
+        
+        <b>9.Explain passed by value and passed by reference</b>
+        
+        <u>"Passing by value"</u> means that you pass the actual value of the variable into the function
+        Pass By Value: In case of Value Type - It is just another copy of Value Type Variable.
+        In case of Reference Type - It is a copy of reference (or pointer) to exact location where memory is 
+        assigned in heap.
+
+        <u>"Passing by reference"</u> means that you pass the variable itself into the function (not just the value).
+        Pass By Reference:
+        for Reference type variable - passing it to another method by using keyword is only useful in the scenario 
+        when the passed variable can be reassigned in the called method. It means :let's say - Outside (caller) 
+        method A inside (called) method BReference Type Object R -passed to method B from method A then 
+        if you reassign the memory location of Object R in method B then those changes wouldn't be seen in Method 
+        A of Object R unless you pass the object R using ref keyword (i.e pass by reference).
+        
+        
+    </pre>
+    <h1 id="mern"></h1>
+    <button onclick="mernStack()">add mern</button>
+    <p id="time"></p>
+    <h2 id="change">HELLO WORLD</h2>
+    <button onclick="changeT()">change Text</button>
+    <button onclick="hideText()">Hide Text</button><br /><br />
+
+    <script src="d5js.js"></script>
+  </body>
+</html>
